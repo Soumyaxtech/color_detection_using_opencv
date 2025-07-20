@@ -13,8 +13,7 @@ while True:
     
     hsv_img = cv2.cvtColor(frame,cv2.COLOR_BGR2HSV)
     
-    low,high = color_limit(color=green)
-    
+    low,high = color_limit(color=green)  # calling color_limit 
     mask = cv2.inRange(hsv_img,low,high)
     
     array_mask = Image.fromarray(mask)
