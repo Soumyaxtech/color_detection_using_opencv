@@ -27,8 +27,10 @@ while True:
         
         frame =cv2.rectangle(frame,(x1,y1),(x2,y2),(0,0,255),5)
     
+    #print(bbox)p
+    
     cv2.imshow('frame1',frame)
-    if cv2.waitKey(1) & 0xFF == ord('p'):   # press p to terminate
+    if cv2.waitKey(1) & 0xFF == ord('p'):
         break
 
 cap.release()
